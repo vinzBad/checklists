@@ -2,6 +2,7 @@
 {% block content %}
 {% for template in templates %}
 <h2> {{ template.name }} </h2>
+<a href="{{ url_for('views.edit_template',template_id=template.id) }}">Edit</a>
 <h3> {{ template.description }} <h3>
 <ul>{% for item in template.items  %}
 <li> {{ item.name }} </li>
