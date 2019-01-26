@@ -1,5 +1,19 @@
-<!doctype html>
-<title>Checklists</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<a href="/"> <h1>Checklists App</h1> </a>
-{% block content %}{% endblock %}
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checklists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block css %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='fa/css/all.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+    {% block js %} {% endblock %}
+</head>
+<body>
+<header>
+<h1><a href="/"> Checklists App</a></h1>
+</header>
+{% block content %} {% endblock %}
+</body>

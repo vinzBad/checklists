@@ -1,0 +1,66 @@
+.template {
+    display: grid;
+    grid-template-columns: 8em 70%
+}
+
+.template > .heading {    
+    margin-bottom: 0.5em;
+}
+
+.template > label.heading {     
+    padding-bottom: 3px;
+}
+
+.template > input[type="text"].heading {
+    font-size: 1.5em;
+    outline: none;   
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 3px;
+    padding-bottom: 5px;  
+}
+
+.template > .description {
+    margin-bottom: 0.4em;
+}
+
+.template > input[type="text"].description {
+    outline: none;   
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    padding-bottom: 5px;  
+}
+
+
+.template > label {
+    grid-column: 1;
+    text-align: right;
+    align-self: center;    
+    margin-right: 1em;
+}
+.template > input {
+    grid-column-start: 2;
+      
+}
+
+.template > select {
+    grid-column-start: 1;
+    margin-bottom: 0.1em;
+    margin-right: 1em;
+}
+
+.template > .item {
+    margin-bottom: 0.1em;  
+}
+
+.template > input[type="submit"] {
+    margin-top: 0.4em;
+}
+
+.template > .error {
+    grid-column: 3;
+    background-color: red;
+}
